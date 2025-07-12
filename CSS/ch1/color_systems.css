@@ -1,0 +1,21 @@
+/* color properties */
+h1 {
+  /* color: rgb(255, 0, 0); */
+  color: #000000;
+}
+/* Text properties */
+p {
+  font-weight: 1200;
+  font-style: italic;
+  text-align: center;
+  border: solid black;
+  width: 50%;
+}
+
+h2{
+  text-align: justify ;
+  /* text-align: center; */
+  text-decoration: red underline;
+  text-decoration-style: wavy;
+  font-size: 25px;
+} 
