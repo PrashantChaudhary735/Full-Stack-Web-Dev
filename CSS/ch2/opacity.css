@@ -1,0 +1,16 @@
+div{
+  height: 200px;
+  width: 200px;
+  background-color: rgb(255, 0, 0,1);
+  font-size:  25px;
+  padding: 10px;
+  border: 2px solid black;
+  margin: 2px;
+  
+}
+#opacity
+{
+  opacity: 1;
+  background-color: green;
+}
+
