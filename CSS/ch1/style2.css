@@ -1,0 +1,21 @@
+button:hover {
+  background-color: black;
+}
+
+button {
+  color: red;
+}
+
+button:onclick {  background-color: yellow;
+}
+
+p:active {
+  color: orange;
+}
+h3 {
+  background-color: yellow;
+}
+
+h3 {
+  background-color: blue;
+}

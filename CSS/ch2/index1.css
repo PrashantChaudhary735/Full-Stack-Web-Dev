@@ -1,0 +1,21 @@
+div {
+  height: 200px;
+  width: 700px;
+  background-color: pink;
+  border-width: 5px;
+  border-style: solid;
+  border-color: black;
+  margin-bottom: 5px;
+}
+/* 
+ h1{
+  border-width: 4px;
+  border-style: dotted;
+  border-color: olive;
+ } */
+
+/* Border shorthand to add the same code mentioned above */
+
+h1 {
+  border: 4px dotted olive;
+}
