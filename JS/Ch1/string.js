@@ -44,7 +44,15 @@
 // console.log(str2.repeat(4));
 
 // Practice Question: 
+// let msg = 'help!';
+// console.log(msg.trim().toUpperCase());
 
+// let name = "ApnaCollege";
+// console.log(name.slice(4,9));
+
+// console.log(name.slice(4,name.length+1).replace(/l/g, 't'));
+
+// 
 
 
 
