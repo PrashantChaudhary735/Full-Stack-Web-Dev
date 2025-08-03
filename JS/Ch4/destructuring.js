@@ -19,6 +19,6 @@ const student = {
 
 // let username = student.username;
 // let password = student.password;
-
+ 
 let { username: user, password: secret, city = "Mumbai" } = student;
 console.log(user, secret, city);
