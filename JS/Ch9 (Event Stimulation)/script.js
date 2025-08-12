@@ -32,12 +32,11 @@ let count = 1;
 //   container.append(newCard);
 // });
 
-// addCardButton.addEventListener("mouseover", (e) => {
-//   console.log(e);
-//   const newCard = document.createElement("div");
-//   newCard.classList.add("card");
-//   newCard.innerText = count;
-//   count++;
-//   container.append(newCard);
-// });
-
+addCardButton.addEventListener("click", (e) => {
+  console.log(e);
+  const newCard = document.createElement("div");
+  newCard.classList.add("card");
+  newCard.innerText = count;
+  count++;
+  container.append(newCard);
+});
