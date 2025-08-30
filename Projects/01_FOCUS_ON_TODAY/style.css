@@ -60,10 +60,12 @@ h1 {
   color: #eeffe0;
   overflow: hidden;
   align-items: center;
+  transition: width 0.2s ease-in-out;
 }
 
 .progress-value span {
   padding-left: 20px;
+
 }
 
 .error-label {
