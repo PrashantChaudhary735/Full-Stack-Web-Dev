@@ -2,28 +2,47 @@
 //   firstName: "Prashant",
 //   lastName: "Chaudhary",
 //   age: 25,
-//   getAgeYear() {
+//   getBirthYear() {
 //     return new Date().getFullYear() - user.age;
 //   },
 // };
 
-function createUser(firstName, lastName, age) {
-  const user = {
-    firstName,
-    lastName,
-    age,
-    getAgeYear() {
-      return new Date().getFullYear() - user.age;
-    },
-  };
-  return user;
+// function getBirthYear() {
+//   console.log(this);
+//   return new Date().getFullYear() - this.age;
+// }
+
+// function createUser(firstName, lastName, age) {
+//   const user = {
+//     f irstName,
+//     lastName,
+//     age,
+//   };
+//   return user;
+// }
+
+// function sayHi() {
+// console.log("Hii");
+// return "hello";
+// }
+
+// createUser.commonMethods = {
+//   getBirthYear: function () {
+//     return new Date().getFullYear() - this.age;
+//   },
+// };
+
+function CreateUser(firstName, lastName, age) {
+  (this.firstName = firstName), (this.lastName = lastName), (this.age = age);
 }
 
-const user1 = createUser("Aman", "Mishra", 35);
-console.log(user1);
-const user2 = createUser("Prashant", "Chaudhary", 24);
-console.log(user2);
+CreateUser.prototype.getBirthYear = function () {
+  return new Date().getFullYear() - this.age;
+};
 
-const arr1 = [1, 3, 4];
-const arr2 = [1, 3, 5];
+CreateUser.prototype.getFullName = function () {
+  return this.firstName + " " + this.lastName;
+};
 
+const user1 = new CreateUser("Prashant", "Chaudhary", 32);
+const user2 = new CreateUser("Aman", "Mishra", 45);
